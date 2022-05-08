@@ -39,7 +39,7 @@ The chosen solution was to build a Windows Form using PowerShell, and to use a D
   <img src="Docs/Images/Example.csv.png">
 </p>
 
-In order to make the script re-usable for many different `.csv` files, the configuration for each type of `.csv` file is stored in a separate schema file.
+In order to make the script re-usable for many different `.csv` files, the configuration for each type of `.csv` file is stored in a separate [schema](#Schema) file.
 
 ## Script
 
@@ -89,7 +89,7 @@ The following opens `C:\Test\Example.csv` using the schema `C:\Test\Example.json
   
   - Type: `Switch`.
 
-### Schema
+## Schema
 
 The schema is in [JSON](https://www.json.org/json-en.html) format, and requires at a minimum a definition for each column in the `.csv` file.
 
