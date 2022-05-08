@@ -1,0 +1,67 @@
+{
+	"FormTitle" : "Local People",
+	"Columns": [{
+        "First Name": {
+			"ColumnReadOnly": false,
+			"Type": "TextBox",
+			"AllowBlank": false,
+			"ValidationRegEx": "^[A-Za-z\\s'-]*$",
+			"HelpText": "Enter the person's first name.\rPlease use the English alphabet without symbols, numbers, accents, or diacritics.\r\rInformation about English alphabet: https://en.wikipedia.org/wiki/English_alphabet \rInformation about diacritics: https://en.wikipedia.org/wiki/Diacritic",
+			"ErrorText": "You must enter a first name."
+		},
+		"Last Name": {
+			"ColumnReadOnly": false,
+			"Type": "TextBox",
+			"AllowBlank": false,
+			"ValidationRegEx": "^[A-Za-z\\s'-]*$",
+			"HelpText": "Enter the person's last name.\rPlease use the English alphabet without symbols, numbers, accents, or diacritics.\r\rInformation about English alphabet: https://en.wikipedia.org/wiki/English_alphabet \rInformation about diacritics: https://en.wikipedia.org/wiki/Diacritic",
+			"ErrorText": "You must enter a last name."
+		},
+		"Email Address": {
+			"ColumnReadOnly": false,
+			"Type": "TextBox",
+			"AllowBlank": false,
+			"ValidationRegEx": "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$",
+			"HelpText": "Enter the person's email address.",
+			"ErrorText": "The value entered is blank, or not a valid email address."
+		},
+        "Biography": {
+			"ColumnReadOnly": false,
+			"Type": "TextBox",
+			"AllowBlank": true,
+			"HelpText": "Enter some interesting information about the person.",
+            "Wrap": true
+		},
+		"Favourite Colour": {
+			"ColumnReadOnly": false,
+			"Type": "ComboBox",
+			"AllowBlank": false,
+			"ComboBoxOptions": [
+                "Blorange",
+                "Green",
+                "Blood Red",
+                "Blue Biro",
+                "Cloudy Tears",
+                "Bubonic Green",
+                "Black and White"
+                
+			],
+			"HelpText": "Select one of the following colours- \r\r[b]Blorange[/b] = A cross between blue and orange.\r[b]Green[/b] = Kinda green.\r[b]Blood Red[/b] = Nice and fresh.\r[b]Blue Biro[/b] = Best friends you can have, pens.\r[b]Cloudy Tears[/b] = Like blinking through torment.\r[b]Bubonic Green[/b] = Hideously green.\r[b]Black and White[/b] = Like some kind of awful facepaint.",
+			"ToolTipText": "Select a colour."
+		},
+		"Status": {
+			"ColumnReadOnly": true,
+			"RowReadOnlyIfValue": [
+				"Deceased",
+				"Undead"
+			],
+			"RowColourIfValue": [{
+				"Alive": "greenyellow",
+				"Deceased": "orange",
+				"Undead": "green"
+			}],
+			"Type": "TextBox",
+			"HelpText": "Shows the status of the person."
+		}
+	}]
+}
